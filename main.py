@@ -118,3 +118,7 @@ async def joke_of_the_year():
 @app.get("/all-jokes") 
 async def all_jokes():
     return JOKES
+
+@app.get("/bad-joke") 
+async def bad_joke():
+    return JOKES[-1]
